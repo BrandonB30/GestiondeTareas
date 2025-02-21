@@ -1,0 +1,67 @@
+<title>LogIn</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="./css/login.css">
+</head>
+<body class="cover" style="background-image: url(./assets/img/fondologin.png;">
+	<form action="home.html" method="" autocomplete="off" class="full-box logInForm">
+		<p class="text-center text-muted"><i class="zmdi zmdi-account-circle zmdi-hc-5x"></i></p>
+		<p class="text-center text-muted text-uppercase">Inicia sesión con tu cuenta</p>
+
+		<!-- 📌 Selección de Tipo de Usuario (Profesor/Estudiante) -->
+		<div class="form-group label-floating">
+			<label class="control-label" for="UserType">Tipo de Usuario</label>
+			<select class="form-control" id="UserType" name="UserType">
+				<option value="profesor">Profesor</option>
+				<option value="estudiante" selected>Estudiante</option>
+			</select>
+		</div>
+
+		<!-- 📌 Campo de E-mail -->
+		<div class="form-group label-floating">
+		  <label class="control-label" for="UserEmail">E-mail</label>
+		  <input class="form-control" id="UserEmail" name="UserEmail" type="email" required>
+		  <p class="help-block">Escribe tu E-mail</p>
+		</div>
+
+		<!-- 📌 Campo de Contraseña -->
+		<div class="form-group label-floating">
+		  <label class="control-label" for="UserPass">Contraseña</label>
+		  <input class="form-control" id="UserPass" name="UserPass" type="password" required>
+		  <p class="help-block">Escribe tu contraseña</p>
+		</div>
+
+		<!-- 📌 Botón de inicio de sesión -->
+		<div class="form-group text-center">
+			<input type="submit" value="Iniciar sesión" class="btn btn-raised btn-danger">
+		</div>
+
+		<!-- 📌 Enlace para "¿Olvidó su contraseña?" -->
+		<div class="text-center">
+			<a href="recuperar.html" class="text-muted">¿Olvidó su contraseña?</a>
+		</div>
+	</form>
+
+	<!--====== Scripts ======-->
+	<script src="./js/jquery-3.1.1.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/material.min.js"></script>
+	<script src="./js/ripples.min.js"></script>
+	<script src="./js/sweetalert2.min.js"></script>
+	<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script>
+		document.querySelector(".logInForm").addEventListener("submit", function(event) {
+        let userType = document.getElementById("UserType").value; // Obtiene el tipo de usuario
+
+        // Cambia dinámicamente la acción del formulario antes de enviarlo
+        if (userType === "profesor") {
+            this.action = "index.html";
+        } else {
+            this.action = "index.html"; // Página de estudiantes
+        }
+    });
+		$.material.init();
+	</script>
+</body>
+</html>
