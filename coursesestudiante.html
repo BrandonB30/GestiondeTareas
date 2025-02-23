@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard | Archivos subidos</title>
+  <title>Dashboard | Cursos por hacer</title>
   <!-- ! Page Title Icon -->
   <link rel="icon" href="images/chart-line-solid.svg">
   <!-- ! Bootstrap -->
@@ -37,11 +37,11 @@
     <!-- ! Start Sidebar -->
     <div class="sidebar bg-white position-relative">
       <div class="holder position-fixed">
-        <h3 class="position-relative text-center fw-bold">Profesor</h3>
+        <h3 class="position-relative text-center fw-bold">Estudiante</h3>
         <div class="links">
           <ul>
             <li>
-              <a class="active d-flex align-items-center" href="index.html">
+              <a class="active d-flex align-items-center" href="Estudiante.html">
                 <i class="fa-regular fa-chart-bar fa-fw"></i>
                 <span>Pagina principal</span>
               </a>
@@ -53,27 +53,27 @@
               </a>
             </li>
             <li>
-              <a class="d-flex align-items-center" href="profile.html">
+              <a class="d-flex align-items-center" href="profileestudiante.html">
                 <i class="fa-regular fa-user fa-fw"></i>
                 <span>Perfil</span>
               </a>
             </li>
             <li>
-              <a class="d-flex align-items-center" href="projects.html">
+              <a class="d-flex align-items-center" href="projectsestudiante.html">
                 <i class="fa-solid fa-diagram-project fa-fw"></i>
-                <span>Projectos</span>
+                <span>Proyectos</span>
               </a>
             </li>
             
             <li>
-              <a class="d-flex align-items-center" href="courses.html">
+              <a class="d-flex align-items-center" href="coursesestudiante.html">
                 <i class="fa-solid fa-graduation-cap fa-fw"></i>
                 <span>Cursos</span>
               </a>
             </li>
             
             <li>
-              <a class="d-flex align-items-center" href="files.html">
+              <a class="d-flex align-items-center" href="filesestudiante.html">
                 <i class="fa-regular fa-file fa-fw"></i>
                 <span>Archivos</span>
               </a>
@@ -83,7 +83,7 @@
         </div>
         <div class="log-out">
           <span onclick="window.location.href='login.html'">
-            <i class="fa-solid fa-arrow-right-from-bracket" style="color: #e10000;"></i>
+            <i class="fa-solid fa-arrow-right-from-bracket" style="color: #18067c;"></i>
             <a href="#">cerrar sesión</a>
           </span>
         </div>
@@ -106,7 +106,7 @@
         </div>
         <div id="notif-container" class="notif-container">
           <ul id="notif-list" class="show">
-            <h4>Notifications</h4>
+            <h4>Notificaciones</h4>
             <li>
               <a href="https://gzixnine.github.io/Template_Three/#events" target="_blank">
                 <img src="images/team-05.png" alt="Avatar">
@@ -179,126 +179,63 @@
         </div>
       </div>
       <!-- ! End Header -->
-      <!-- ! Start Files -->
-      <h1 class="position-relative header-page">Archivos</h1>
-      <div class="files-page">
-        <div class="statistics mega" data-aos="fade-up" data-aos-delay="450">
-          <h4>Estadísticas de archivos</h4>
-          <div class="d-flex align-items-center data">
-            <i class="fa-regular fa-file-pdf fa-lg blue c-blue icon"></i>
-            <div class="info">
-              <span>Archivos PDF </span>
-              <span class="num">130</span>
-            </div>
-            <div class="size">6.5GB</div>
+      <!-- ! Start Courses -->
+      <h1 class="position-relative header-page">Cursos</h1>
+      <div class="courses-page d-grid">
+        <div class="course mega" data-aos="fade-up" data-aos-delay="50">
+          <img class="cover" src="images/course-01.jpg" alt="" />
+          <img class="instructor" src="images/team-01.png" alt="" />
+          <div class="p-20">
+            <h4>Dominar el diseño web            </h4>
+            <p class="description">
+              Domine el arte del diseño web y la burla, la creación de prototipos y la creación de arquitectura de diseño web
+            </p>
           </div>
-          <div class="d-flex align-items-center data">
-            <i class="fa-regular fa-images fa-lg green c-green icon"></i>
-            <div class="info">
-              <span>Imagenes</span>
-              <span class="num">115 Files</span>
-            </div>
-            <div class="size">3.5GB</div>
+          <div class="info">
+            <span class="title c-white btn-shape">Informacion de curso</span>
+            <span>
+              <i class="fa-regular fa-user"></i>
+              950
+            </span>
+            <span>
+              <i class="fa-solid fa-dollar-sign"></i>
+              165
+            </span>
           </div>
-          <div class="d-flex align-items-center data">
-            <i class="fa-regular fa-file-word fa-lg red c-red red icon"></i>
-            <div class="info">
-              <span>Archivos de Word              </span>
-              <span class="num">110 Files</span>
-            </div>
-            <div class="size">3.2GB</div>
-          </div>
-          <div class="d-flex align-items-center data">
-            <i class="fa-solid fa-file-csv fa-lg orange c-orange icon"></i>
-            <div class="info">
-              <span>Archivos CSV </span>
-              <span class="num">99 Files</span>
-            </div>
-            <div class="size">2.9GB</div>
-          </div>
-          <a class="upload d-block" href="#">
-            <i class="fa-solid fa-angles-up"></i>
-            Subir
-          </a>
         </div>
-        <div class="files-content d-grid">
-          <div class="file mega" data-aos="fade-up" data-aos-delay="150">
-            <i class="fa-solid fa-download"></i>
-            <div class="icon">
-              <img class="mt-15 mb-15" src="images/pdf.svg" alt="" />
-            </div>
-            <div class="name">mi-Archivo.pdf</div>
-            <p class="user">Elzero</p>
-            <div class="info d-flex justify-content-between align-items-center mt-10 pt-10 fs-13 c-grey">
-              <span>20/06/2020</span>
-              <span>5.5MB</span>
-            </div>
+        <div class="course mega" data-aos="fade-up" data-aos-delay="100">
+          <img class="cover" src="images/course-02.jpg" alt="" />
+          <img class="instructor" src="images/team-02.png" alt="" />
+          <div class="p-20">
+            <h4>Estructura de datos y algoritmos
+            </h4>
+            <p class="description">
+              Domine el arte de la estructura de datos y algoritmos famosos como ordenar, dividir y conquistar
+            </p>
           </div>
-          <div class="file mega" data-aos="fade-up" data-aos-delay="150">
-            <i class="fa-solid fa-download"></i>
-            <div class="icon">
-              <img class="mt-15 mb-15" src="images/avi.svg" alt="" />
-            </div>
-            <div class="name">mi-Archivo.avi</div>
-            <p class="user">Administrador</p>
-            <div class="info d-flex justify-content-between align-items-center mt-10 pt-10 fs-13 c-grey">
-              <span>16/5/2021</span>
-              <span>12.5MB</span>
-            </div>
+          <div class="info">
+            <span class="title c-white btn-shape">información de curso</span>
+            <span> <i class="fa-regular fa-user"></i> 1150</span>
+            <span><i class="fa-solid fa-dollar-sign"></i> 210</span>
           </div>
-          <div class="file mega" data-aos="fade-up" data-aos-delay="150">
-            <i class="fa-solid fa-download"></i>
-            <div class="icon">
-              <img class="mt-15 mb-15" src="images/eps.svg" alt="" />
-            </div>
-            <div class="name">mi-Archivo.eps</div>
-            <p class="user">Cargador</p>
-            <div class="info d-flex justify-content-between align-items-center mt-10 pt-10 fs-13 c-grey">
-              <span>16/5/2021</span>
-              <span>2.7MB</span>
-            </div>
-          </div>
-          <div class="file mega" data-aos="fade-up" data-aos-delay="200">
-            <i class="fa-solid fa-download"></i>
-            <div class="icon">
-              <img class="mt-15 mb-15" src="images/psd.svg" alt="" />
-            </div>
-            <div class="name">mi-Archivo.psd</div>
-            <p class="user">Osama</p>
-            <div class="info d-flex justify-content-between align-items-center mt-10 pt-10 fs-13 c-grey">
-              <span>16/5/2021</span>
-              <span>15.1MB</span>
-            </div>
-          </div>
-          <div class="file mega" data-aos="fade-up" data-aos-delay="200">
-            <i class="fa-solid fa-download"></i>
-            <div class="icon">
-              <img class="mt-15 mb-15" src="images/dll.svg" alt="" />
-            </div>
-            <div class="name">mi-Archivo.dll</div>
-            <p class="user">Descifrador</p>
-            <div class="info d-flex justify-content-between align-items-center mt-10 pt-10 fs-13 c-grey">
-              <span>16/5/2021</span>
-              <span>2.2MB</span>
-            </div>
-          </div>
-          <div class="file mega" data-aos="fade-up" data-aos-delay="200">
-            <i class="fa-solid fa-download"></i>
-            <div class="icon">
-              <img class="mt-15 mb-15" src="images/png.svg" alt="" />
-            </div>
-            <div class="name">mi-Archivo.png</div>
-            <p class="user">Diseñador</p>
-            <div class="info d-flex justify-content-between align-items-center mt-10 pt-10 fs-13 c-grey">
-              <span>16/5/2021</span>
-              <span>1.1MB</span>
-            </div>
-          
-          
         </div>
-      </div>
-    </div>
-    <!-- ! End Files -->
+        <div class="course mega" data-aos="fade-up" data-aos-delay="150">
+          <img class="cover" src="images/course-03.jpg" alt="" />
+          <img class="instructor" src="images/team-01.png" alt="" />
+          <div class="p-20">
+            <h4>Diseño web responsivo            </h4>
+            <p class="description">
+              Dominar el diseño web responsivo y las consultas de medios y saber todo sobre los puntos de interrupción
+            </p>
+          </div>
+          <div class="info">
+            <span class="title c-white btn-shape">Course Info</span>
+            <span> <i class="fa-regular fa-user"></i> 650</span>
+            <span><i class="fa-solid fa-dollar-sign"></i> 90</span>
+          </div>
+        </div>
+        
+    <!-- ! End Courses -->
   </div>
   <!-- ! End Content -->
   <!---------------------------------------------------------------------------->

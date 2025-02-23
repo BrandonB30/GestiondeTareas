@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard | Archivos subidos</title>
+  <title>Dashboard | Profile</title>
   <!-- ! Page Title Icon -->
   <link rel="icon" href="images/chart-line-solid.svg">
   <!-- ! Bootstrap -->
@@ -37,43 +37,43 @@
     <!-- ! Start Sidebar -->
     <div class="sidebar bg-white position-relative">
       <div class="holder position-fixed">
-        <h3 class="position-relative text-center fw-bold">Profesor</h3>
+        <h3 class="position-relative text-center fw-bold">Estudiante</h3>
         <div class="links">
           <ul>
             <li>
-              <a class="active d-flex align-items-center" href="index.html">
+              <a class="active d-flex align-items-center" href="Estudiante.html">
                 <i class="fa-regular fa-chart-bar fa-fw"></i>
                 <span>Pagina principal</span>
               </a>
             </li>
             <li>
-              <a class="d-flex align-items-center" href="settings.html">
+              <a class="d-flex align-items-center" href="settingsestudiante.html">
                 <i class="fa-solid fa-gear fa-fw"></i>
                 <span>configuraciones</span>
               </a>
             </li>
             <li>
-              <a class="d-flex align-items-center" href="profile.html">
+              <a class="d-flex align-items-center" href="profileestudiante.html">
                 <i class="fa-regular fa-user fa-fw"></i>
                 <span>Perfil</span>
               </a>
             </li>
             <li>
-              <a class="d-flex align-items-center" href="projects.html">
+              <a class="d-flex align-items-center" href="projectsestudiante.html">
                 <i class="fa-solid fa-diagram-project fa-fw"></i>
-                <span>Projectos</span>
+                <span>Proyectos</span>
               </a>
             </li>
             
             <li>
-              <a class="d-flex align-items-center" href="courses.html">
+              <a class="d-flex align-items-center" href="coursesestudiante.html">
                 <i class="fa-solid fa-graduation-cap fa-fw"></i>
                 <span>Cursos</span>
               </a>
             </li>
             
             <li>
-              <a class="d-flex align-items-center" href="files.html">
+              <a class="d-flex align-items-center" href="filesestudiante.html">
                 <i class="fa-regular fa-file fa-fw"></i>
                 <span>Archivos</span>
               </a>
@@ -83,7 +83,7 @@
         </div>
         <div class="log-out">
           <span onclick="window.location.href='login.html'">
-            <i class="fa-solid fa-arrow-right-from-bracket" style="color: #e10000;"></i>
+            <i class="fa-solid fa-arrow-right-from-bracket" style="color: #18067c;"></i>
             <a href="#">cerrar sesión</a>
           </span>
         </div>
@@ -106,7 +106,7 @@
         </div>
         <div id="notif-container" class="notif-container">
           <ul id="notif-list" class="show">
-            <h4>Notifications</h4>
+            <h4>Notificaciones</h4>
             <li>
               <a href="https://gzixnine.github.io/Template_Three/#events" target="_blank">
                 <img src="images/team-05.png" alt="Avatar">
@@ -179,126 +179,120 @@
         </div>
       </div>
       <!-- ! End Header -->
-      <!-- ! Start Files -->
-      <h1 class="position-relative header-page">Archivos</h1>
-      <div class="files-page">
-        <div class="statistics mega" data-aos="fade-up" data-aos-delay="450">
-          <h4>Estadísticas de archivos</h4>
-          <div class="d-flex align-items-center data">
-            <i class="fa-regular fa-file-pdf fa-lg blue c-blue icon"></i>
-            <div class="info">
-              <span>Archivos PDF </span>
-              <span class="num">130</span>
+      <!-- ! Start Profile -->
+      <h1 class="position-relative header-page">Perfil</h1>
+      <div class="Profile-page d-grid">
+        <!-- Start Overview -->
+        <div class="overview d-flex align-items-center mega" data-aos="fade-up" data-aos-delay="150">
+          <div class="avatar-box" data-aos="fade-right" data-aos-delay="550">
+            <img class="rad-half mb-10" src="images/avatar.png" alt="" />
+            <h3 class="name">Ahmed Allam</h3>
+            <p class="steps">Level 1</p>
+            <div class="level">
+              <span style="width: 70%"></span>
             </div>
-            <div class="size">6.5GB</div>
-          </div>
-          <div class="d-flex align-items-center data">
-            <i class="fa-regular fa-images fa-lg green c-green icon"></i>
-            <div class="info">
-              <span>Imagenes</span>
-              <span class="num">115 Files</span>
+            <div class="rating mt-10 mb-10">
+              <i class="fa-solid fa-star c-orange fs-13"></i>
+              <i class="fa-solid fa-star c-orange fs-13"></i>
+              <i class="fa-solid fa-star c-grey fs-13"></i>
+              <i class="fa-solid fa-star c-grey fs-13"></i>
+              <i class="fa-solid fa-star c-grey fs-13"></i>
             </div>
-            <div class="size">3.5GB</div>
+            <p class="rat">7 Rating</p>
           </div>
-          <div class="d-flex align-items-center data">
-            <i class="fa-regular fa-file-word fa-lg red c-red red icon"></i>
-            <div class="info">
-              <span>Archivos de Word              </span>
-              <span class="num">110 Files</span>
+          <div class="info-box">
+            <!-- Start Information Row -->
+            <div class="box d-flex align-items-center" data-aos="fade-up" data-aos-delay="250">
+              <h4 class="heading">Información general</h4>
+              <div>
+                <span class="c-grey">Nombre completo:</span>
+                <span>Ahmed Allam</span>
+              </div>
+              <div>
+                <span class="c-grey">Genero:</span>
+                <span>Male</span>
+              </div>
+              <div>
+                <span class="c-grey">Pais:</span>
+                <span>Egypt</span>
+              </div>
+              <div>
+                <label>
+                  <input id="website-control-toggle1" class="toggle-checkbox" type="checkbox" checked
+                    autocomplete="off" />
+                  <div class="toggle-switch"></div>
+                </label>
+              </div>
             </div>
-            <div class="size">3.2GB</div>
-          </div>
-          <div class="d-flex align-items-center data">
-            <i class="fa-solid fa-file-csv fa-lg orange c-orange icon"></i>
-            <div class="info">
-              <span>Archivos CSV </span>
-              <span class="num">99 Files</span>
+            <!-- End Information Row -->
+            <!-- Start Information Row -->
+            <div class="box d-flex align-items-center" data-aos="fade-up" data-aos-delay="350">
+              <h4 class="heading">Información Personal </h4>
+              <div>
+                <span class="c-grey">Correo:</span>
+                <span>ahmallam@std.mans.edu.eg</span>
+              </div>
+              <div>
+                <span class="c-grey">Celular:</span>
+                <span>019123456789</span>
+              </div>
+              <div>
+                <span class="c-grey">Fecha de nacimiento:</span>
+                <span>03/12/2003</span>
+              </div>
+              <div>
+                <label>
+                  <input id="website-control-toggle2" class="toggle-checkbox" type="checkbox" autocomplete="off" />
+                  <div class="toggle-switch"></div>
+                </label>
+              </div>
             </div>
-            <div class="size">2.9GB</div>
+            <!-- End Information Row -->
+            <!-- Start Information Row -->
+            <div class="box d-flex align-items-center" data-aos="fade-up" data-aos-delay="450">
+              <h4 class="heading">Informacion laboral</h4>
+              <div>
+                <span class="c-grey">Titulo:</span>
+                <span>Full Stack Developer</span>
+              </div>
+              <div>
+                <span class="c-grey">Plataformas en los que programa:</span>
+                <span>JavaScript</span>
+              </div>
+              <div>
+                <span class="c-grey">Tiempo de experiencia:</span>
+                <span>0</span>
+              </div>
+              <div>
+                <label>
+                  <input id="website-control-toggle3" class="toggle-checkbox" type="checkbox" checked
+                    autocomplete="off" />
+                  <div class="toggle-switch"></div>
+                </label>
+              </div>
+            </div>
+            <!-- End Information Row -->
+            <!-- Start Information Row -->
+            
+              </div>
+              <div>
+                <label>
+                  <input id="website-control-toggle4" class="toggle-checkbox" type="checkbox" autocomplete="off" />
+                  <div class="toggle-switch"></div>
+                </label>
+              </div>
+            </div>
+            <!-- End Information Row -->
           </div>
-          <a class="upload d-block" href="#">
-            <i class="fa-solid fa-angles-up"></i>
-            Subir
-          </a>
         </div>
-        <div class="files-content d-grid">
-          <div class="file mega" data-aos="fade-up" data-aos-delay="150">
-            <i class="fa-solid fa-download"></i>
-            <div class="icon">
-              <img class="mt-15 mb-15" src="images/pdf.svg" alt="" />
-            </div>
-            <div class="name">mi-Archivo.pdf</div>
-            <p class="user">Elzero</p>
-            <div class="info d-flex justify-content-between align-items-center mt-10 pt-10 fs-13 c-grey">
-              <span>20/06/2020</span>
-              <span>5.5MB</span>
-            </div>
-          </div>
-          <div class="file mega" data-aos="fade-up" data-aos-delay="150">
-            <i class="fa-solid fa-download"></i>
-            <div class="icon">
-              <img class="mt-15 mb-15" src="images/avi.svg" alt="" />
-            </div>
-            <div class="name">mi-Archivo.avi</div>
-            <p class="user">Administrador</p>
-            <div class="info d-flex justify-content-between align-items-center mt-10 pt-10 fs-13 c-grey">
-              <span>16/5/2021</span>
-              <span>12.5MB</span>
-            </div>
-          </div>
-          <div class="file mega" data-aos="fade-up" data-aos-delay="150">
-            <i class="fa-solid fa-download"></i>
-            <div class="icon">
-              <img class="mt-15 mb-15" src="images/eps.svg" alt="" />
-            </div>
-            <div class="name">mi-Archivo.eps</div>
-            <p class="user">Cargador</p>
-            <div class="info d-flex justify-content-between align-items-center mt-10 pt-10 fs-13 c-grey">
-              <span>16/5/2021</span>
-              <span>2.7MB</span>
-            </div>
-          </div>
-          <div class="file mega" data-aos="fade-up" data-aos-delay="200">
-            <i class="fa-solid fa-download"></i>
-            <div class="icon">
-              <img class="mt-15 mb-15" src="images/psd.svg" alt="" />
-            </div>
-            <div class="name">mi-Archivo.psd</div>
-            <p class="user">Osama</p>
-            <div class="info d-flex justify-content-between align-items-center mt-10 pt-10 fs-13 c-grey">
-              <span>16/5/2021</span>
-              <span>15.1MB</span>
-            </div>
-          </div>
-          <div class="file mega" data-aos="fade-up" data-aos-delay="200">
-            <i class="fa-solid fa-download"></i>
-            <div class="icon">
-              <img class="mt-15 mb-15" src="images/dll.svg" alt="" />
-            </div>
-            <div class="name">mi-Archivo.dll</div>
-            <p class="user">Descifrador</p>
-            <div class="info d-flex justify-content-between align-items-center mt-10 pt-10 fs-13 c-grey">
-              <span>16/5/2021</span>
-              <span>2.2MB</span>
-            </div>
-          </div>
-          <div class="file mega" data-aos="fade-up" data-aos-delay="200">
-            <i class="fa-solid fa-download"></i>
-            <div class="icon">
-              <img class="mt-15 mb-15" src="images/png.svg" alt="" />
-            </div>
-            <div class="name">mi-Archivo.png</div>
-            <p class="user">Diseñador</p>
-            <div class="info d-flex justify-content-between align-items-center mt-10 pt-10 fs-13 c-grey">
-              <span>16/5/2021</span>
-              <span>1.1MB</span>
-            </div>
-          
-          
-        </div>
+        <!-- End Overview -->
+        <!-- Start Other Data -->
+        
+        
+        <!-- End Other Data -->
       </div>
     </div>
-    <!-- ! End Files -->
+    <!-- ! End Profile -->
   </div>
   <!-- ! End Content -->
   <!---------------------------------------------------------------------------->
